@@ -5,12 +5,11 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "npm install && node server.js",
+    "start": "node server.js",
     "export": "nuxt export",
     "serve": "nuxt serve",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js",
-    "postinstall": "npm run build"
   },
   "dependencies": {
     "@nuxtjs/device": "^1.2.7",
