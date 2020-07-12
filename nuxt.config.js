@@ -156,9 +156,9 @@ export default {
 	 */
 	build: {},
 	serverMiddleware: [
-		'~/301-redirect.js',
 		redirectSSL.create({
 			enabled: process.env.NODE_ENV === 'production',
 		}),
+		'~/301-redirect.js',
 	],
 }
