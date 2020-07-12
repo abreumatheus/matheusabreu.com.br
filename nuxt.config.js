@@ -159,7 +159,6 @@ export default {
 		'~/301-redirect.js',
 		redirectSSL.create({
 			enabled: process.env.NODE_ENV === 'production',
-			statusCode: 301,
 		}),
 	],
 }
