@@ -1,23 +1,29 @@
 <template>
-	<div id="wrapper">
+	<div id="wrapper" itemscope itemtype="http://schema.org/Person">
 		<transition name="fade">
-			<ProfilePhoto v-if="isPhotoTyped || isFinished"></ProfilePhoto>
+			<ProfilePhoto v-show="isPhotoTyped || isFinished"></ProfilePhoto>
 		</transition>
 		<transition name="fade">
-			<h1 v-if="isNameTyped || isFinished">Matheus Abreu</h1>
+			<h1 v-show="isNameTyped || isFinished" itemprop="name">
+				Matheus Abreu
+			</h1>
 		</transition>
 		<transition name="fade">
-			<h2 v-if="isRoleTyped || isFinished">Python / Web Developer</h2>
+			<h2 v-show="isRoleTyped || isFinished" itemprop="jobTitle">
+				Python / Web Developer
+			</h2>
 		</transition>
 		<transition name="fade">
-			<p v-if="isCompanyTyped || isFinished">HBSIS / AmBev</p>
+			<p v-show="isCompanyTyped || isFinished" itemprop="worksFor">
+				HBSIS / AmBev
+			</p>
 		</transition>
 		<transition name="fade">
-			<SocialLinks v-if="isSocialTyped || isFinished"></SocialLinks>
+			<SocialLinks v-show="isSocialTyped || isFinished"></SocialLinks>
 		</transition>
 		<br />
 		<vue-typer
-			v-if="!isFinished"
+			v-show="!isFinished"
 			caret-animation="blink"
 			:repeat="0"
 			:erase-on-complete="true"
@@ -41,11 +47,11 @@ export default {
 			isFinished: false,
 			currentIndex: 0,
 			codeList: [
-				'<ProfilePhoto v-if="isPhotoTyped"></ProfilePhoto>',
-				'<h1 v-if="isNameTyped">Matheus Abreu</h1>',
-				'<h2 v-if="isRoleTyped">Python / Web Developer</h2>',
-				'<p v-if="isCompanyTyped">HBSIS / AmBev</p>',
-				'<SocialLinks v-if="isSocialTyped"></SocialLinks>',
+				'<ProfilePhoto v-show="isPhotoTyped"></ProfilePhoto>',
+				'<h1 v-show="isNameTyped">Matheus Abreu</h1>',
+				'<h2 v-show="isRoleTyped">Python / Web Developer</h2>',
+				'<p v-show="isCompanyTyped">HBSIS / AmBev</p>',
+				'<SocialLinks v-show="isSocialTyped"></SocialLinks>',
 			],
 			isPhotoTyped: false,
 			isNameTyped: false,
