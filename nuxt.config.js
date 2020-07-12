@@ -156,19 +156,9 @@ export default {
 	 */
 	build: {},
 	serverMiddleware: [
+		'~/301-redirect.js',
 		redirectSSL.create({
 			enabled: process.env.NODE_ENV === 'production',
 		}),
-		function (req, res, next) {
-			const host = req.headers.host
-			const env = process.env.NODE_ENV
-
-			if (env === 'production' && host !== 'matheusabreu.com.br') {
-				res.writeHead(301, { Location: 'https://matheusabreu.com.br' })
-				return res.end()
-			}
-
-			return next()
-		},
 	],
 }
