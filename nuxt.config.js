@@ -158,7 +158,6 @@ export default {
 	serverMiddleware: [
 		redirectSSL.create({
 			enabled: process.env.NODE_ENV === 'production',
-			redirectHost: 'matheusabreu.com.br',
 		}),
 	],
 }
