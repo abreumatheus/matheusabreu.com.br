@@ -19,11 +19,11 @@
 		<vue-typer
 			v-if="!isFinished"
 			caret-animation="blink"
-			repeat="0"
-			erase-on-complete="true"
+			:repeat="0"
+			:erase-on-complete="true"
 			erase-style="clear"
-			pre-erase-delay="1000"
-			pre-type-delay="1000"
+			:pre-erase-delay="1000"
+			:pre-type-delay="1000"
 			:text="codeList[currentIndex]"
 			@typed="setNext(currentIndex)"
 		></vue-typer>
