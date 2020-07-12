@@ -71,7 +71,7 @@ export default {
 				property: 'og:image:height',
 				content: '460',
 			},
-			{ hid: 'og:type', name: 'og:type', content: 'website' },
+			{ hid: 'og:type', property: 'og:type', content: 'website' },
 			{
 				hide: 'twitter:title',
 				name: 'twitter:title',
