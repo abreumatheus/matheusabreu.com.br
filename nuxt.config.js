@@ -161,12 +161,13 @@ export default {
 		}),
 		function (req, res, next) {
 			const host = req.headers.host
-			const url = req.url
 			const env = process.env.NODE_ENV
-			const forceDomain = 'https://matheusabreu.com.br'
 
-			if (env === 'production' && host !== 'matheusabreu.com.br') {
-				res.writeHead(301, { Location: forceDomain + url })
+			if (
+				env === 'production' &&
+				host !== 'https://matheusabreu.com.br'
+			) {
+				res.writeHead(301, { Location: 'https://matheusabreu.com.br' })
 				return res.end()
 			}
 
