@@ -155,4 +155,10 @@ export default {
 	 ** See https://nuxtjs.org/api/configuration-build/
 	 */
 	build: {},
+	serverMiddleware: [
+		redirectSSL.create({
+			enabled: process.env.NODE_ENV === 'production',
+			redirectHost: 'matheusabreu.com.br',
+		}),
+	],
 }

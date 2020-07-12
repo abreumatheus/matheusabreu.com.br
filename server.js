@@ -9,12 +9,6 @@ async function start() {
 	// We get Nuxt instance
 	const nuxt = await loadNuxt(isDev ? 'dev' : 'start')
 
-	app.use(
-		redirectSSL.create({
-			enabled: process.env.NODE_ENV === 'production',
-			redirectHost: 'matheusabreu.com.br',
-		})
-	)
 	// Render every route with Nuxt.js
 	app.use(nuxt.render)
 
