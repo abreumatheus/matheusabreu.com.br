@@ -1,7 +1,6 @@
 const { loadNuxt, build } = require('nuxt')
 
 const app = require('express')()
-const redirectSSL = require('redirect-ssl')
 const isDev = process.env.NODE_ENV !== 'production'
 const port = process.env.PORT || 3000
 
@@ -10,11 +9,6 @@ async function start() {
 	const nuxt = await loadNuxt(isDev ? 'dev' : 'start')
 
 	// Render every route with Nuxt.js
-	app.use(
-		redirectSSL.create({
-			enabled: process.env.NODE_ENV === 'production',
-		})
-	)
 	app.use(nuxt.render)
 
 	// Build only in dev mode with hot-reloading
