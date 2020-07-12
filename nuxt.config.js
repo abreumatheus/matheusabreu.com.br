@@ -163,10 +163,7 @@ export default {
 			const host = req.headers.host
 			const env = process.env.NODE_ENV
 
-			if (
-				env === 'production' &&
-				host !== 'https://matheusabreu.com.br'
-			) {
+			if (env === 'production' && host !== 'matheusabreu.com.br') {
 				res.writeHead(301, { Location: 'https://matheusabreu.com.br' })
 				return res.end()
 			}
