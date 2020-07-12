@@ -157,10 +157,9 @@ export default {
 	build: {},
 	serverMiddleware: [
 		'~/301-redirect.js',
-		// redirectSSL.create({
-		// 	enabled: process.env.NODE_ENV === 'production',
-		// 	redirectHost: 'matheusabreu.com.br',
-		// 	statusCode: 301,
-		// }),
+		redirectSSL.create({
+			enabled: process.env.NODE_ENV === 'production',
+			statusCode: 301,
+		}),
 	],
 }
