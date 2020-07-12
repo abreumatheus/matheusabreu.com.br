@@ -29,8 +29,69 @@ export default {
 				content:
 					'Matheus Abreu is a Python / Web developer working at HBSIS / AmBev',
 			},
+			{ hid: 'og:title', name: 'og:title', content: this.head.title },
+			{
+				hid: 'og:site_name',
+				name: 'og:site_name',
+				content: this.head.title,
+			},
+			{
+				hid: 'og:description',
+				name: 'og:description',
+				content: this.head.description,
+			},
+			{
+				hid: 'og:url',
+				name: 'og:url',
+				content: this.info.pageURL,
+			},
+			{
+				hid: 'og:image',
+				name: 'og:image',
+				content: this.info.coverImage,
+			},
+			{
+				hid: 'og:image:type',
+				name: 'og:image:type',
+				content: this.info.coverImageType,
+			},
+			{
+				hid: 'og:image:width',
+				name: 'og:image:width',
+				content: this.info.coverImageSize,
+			},
+			{
+				hid: 'og:image:height',
+				name: 'og:image:height',
+				content: this.info.coverImageSize,
+			},
+			{ hid: 'og:type', name: 'og:type', content: 'website' },
+			{
+				hide: 'twitter:card',
+				name: 'twitter:card',
+				content: this.info.coverImage
+					? 'summary_large_image'
+					: 'summary',
+			},
+			{
+				hide: 'twitter:site',
+				name: 'twitter:site',
+				content: this.info.twitterHandle,
+			},
 		],
 		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+	},
+	data() {
+		return {
+			info: {
+				coverImage:
+					'https://avatars2.githubusercontent.com/u/13948812?s=460&v=4',
+				coverImageType: 'image/jpeg',
+				coverImageSize: '460',
+				pageURL: 'https://matheusabreu.com.br',
+				twitterHandle: '@abreucodes',
+			},
+		}
 	},
 	/*
 	 ** Global CSS
