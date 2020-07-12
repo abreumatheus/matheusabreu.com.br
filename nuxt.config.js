@@ -31,50 +31,66 @@ export default {
 			},
 			{
 				hid: 'og:title',
-				name: 'og:title',
+				property: 'og:title',
 				content: 'Matheus Abreu - Python / Web Developer',
 			},
 			{
 				hid: 'og:site_name',
-				name: 'og:site_name',
+				property: 'og:site_name',
 				content: 'Matheus Abreu - Python / Web Developer',
 			},
 			{
 				hid: 'og:description',
-				name: 'og:description',
+				property: 'og:description',
 				content:
 					'Matheus Abreu is a Python / Web developer working at HBSIS / AmBev',
 			},
 			{
 				hid: 'og:url',
-				name: 'og:url',
-				content: 'https=//matheusabreu.com.br',
+				property: 'og:url',
+				content: 'https://matheusabreu.com.br',
 			},
 			{
 				hid: 'og:image',
-				name: 'og:image',
+				property: 'og:image',
 				content:
 					'https://avatars2.githubusercontent.com/u/13948812?s=460&v=4',
 			},
 			{
 				hid: 'og:image:type',
-				name: 'og:image:type',
+				property: 'og:image:type',
 				content: 'image/jpeg',
 			},
 			{
 				hid: 'og:image:width',
-				name: 'og:image:width',
+				property: 'og:image:width',
 				content: '460',
 			},
 			{
 				hid: 'og:image:height',
-				name: 'og:image:height',
+				property: 'og:image:height',
 				content: '460',
 			},
 			{ hid: 'og:type', name: 'og:type', content: 'website' },
 			{
+				hide: 'twitter:title',
+				name: 'twitter:title',
+				content: 'Matheus Abreu - Python / Web Developer',
+			},
+			{
+				hid: 'twitter:description',
+				name: 'twitter:description',
+				content:
+					'Matheus Abreu is a Python / Web developer working at HBSIS / AmBev',
+			},
+			{
 				hide: 'twitter:card',
 				name: 'twitter:card',
+				content: 'summary_large_image',
+			},
+			{
+				hide: 'twitter:image',
+				name: 'twitter:image',
 				content:
 					'https://avatars2.githubusercontent.com/u/13948812?s=460&v=4',
 			},
