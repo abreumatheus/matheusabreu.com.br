@@ -12,6 +12,7 @@ async function start() {
 	app.use(
 		redirectSSL.create({
 			enabled: process.env.NODE_ENV === 'production',
+			redirectHost: 'matheusabreu.com.br',
 		})
 	)
 	// Render every route with Nuxt.js
