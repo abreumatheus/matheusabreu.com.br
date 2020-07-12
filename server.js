@@ -1,5 +1,4 @@
 const { loadNuxt, build } = require('nuxt')
-const redirectSSL = require('redirect-ssl')
 
 const app = require('express')()
 const isDev = process.env.NODE_ENV !== 'production'
