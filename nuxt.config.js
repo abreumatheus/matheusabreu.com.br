@@ -1,5 +1,3 @@
-import redirectSSL from 'redirect-ssl'
-
 export default {
 	/*
 	 ** Nuxt rendering mode
@@ -10,7 +8,7 @@ export default {
 	 ** Nuxt target
 	 ** See https://nuxtjs.org/api/configuration-target
 	 */
-	target: 'server',
+	target: 'static',
 	/*
 	 ** Headers of the page
 	 ** See https://nuxtjs.org/api/configuration-head
@@ -48,7 +46,7 @@ export default {
 			{
 				hid: 'og:url',
 				property: 'og:url',
-				content: 'https://matheusabreu.com.br',
+				content: 'https://matheusabreu.dev.br',
 			},
 			{
 				hid: 'og:image',
@@ -140,11 +138,11 @@ export default {
 		'@nuxtjs/sitemap',
 	],
 	sitemap: {
-		hostname: 'https://matheusabreu.com.br',
+		hostname: 'https://matheusabreu.dev.br',
 	},
 	robots: [
 		{
-			sitemap: 'https://matheusabreu.com.br/sitemap.xml',
+			sitemap: 'https://matheusabreu.dev.br/sitemap.xml',
 		},
 	],
 	toast: {
@@ -155,9 +153,4 @@ export default {
 	 ** See https://nuxtjs.org/api/configuration-build/
 	 */
 	build: {},
-	serverMiddleware: [
-		redirectSSL.create({
-			enabled: process.env.NODE_ENV === 'production',
-		}),
-	],
 }
