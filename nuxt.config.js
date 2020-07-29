@@ -46,7 +46,7 @@ export default {
 			{
 				hid: 'og:url',
 				property: 'og:url',
-				content: 'https://matheusabreu.dev.br',
+				content: 'https://matheusabreu.com.br',
 			},
 			{
 				hid: 'og:image',
@@ -138,11 +138,11 @@ export default {
 		'@nuxtjs/sitemap',
 	],
 	sitemap: {
-		hostname: 'https://matheusabreu.dev.br',
+		hostname: 'https://matheusabreu.com.br',
 	},
 	robots: [
 		{
-			sitemap: 'https://matheusabreu.dev.br/sitemap.xml',
+			sitemap: 'https://matheusabreu.com.br/sitemap.xml',
 		},
 	],
 	toast: {
