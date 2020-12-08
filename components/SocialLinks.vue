@@ -13,7 +13,7 @@
 			>Github</a
 		>
 		<a
-			href="mailto:ola@matheusabreu.com.br"
+			href="mailto:matheus.abreu@olist.com"
 			target="_blank"
 			itemprop="email"
 			>Email</a
