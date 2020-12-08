@@ -15,7 +15,7 @@
 		</transition>
 		<transition name="fade">
 			<p v-show="isCompanyTyped || isFinished" itemprop="worksFor">
-				HBSIS / AmBev
+				<b>olist</b>
 			</p>
 		</transition>
 		<transition name="fade">
@@ -50,7 +50,7 @@ export default {
 				'<ProfilePhoto v-show="isPhotoTyped"></ProfilePhoto>',
 				'<h1 v-show="isNameTyped">Matheus Abreu</h1>',
 				'<h2 v-show="isRoleTyped">Python / Web Developer</h2>',
-				'<p v-show="isCompanyTyped">HBSIS / AmBev</p>',
+				'<p v-show="isCompanyTyped"><b>olist</b></p>',
 				'<SocialLinks v-show="isSocialTyped"></SocialLinks>',
 			],
 			isPhotoTyped: false,
