@@ -9,7 +9,7 @@ export default {
 	 ** See https://nuxtjs.org/api/configuration-head
 	 */
 	head: {
-		title: 'Matheus Abreu - Python / Web Developer',
+		title: 'Matheus Abreu - Software Engineer',
 		meta: [
 			{ charset: 'utf-8' },
 			{
@@ -20,23 +20,23 @@ export default {
 				hid: 'description',
 				name: 'description',
 				content:
-					'Matheus Abreu is a Python / Web developer working at olist',
+					'Matheus Abreu is a Software Engineer working at olist',
 			},
 			{
 				hid: 'og:title',
 				property: 'og:title',
-				content: 'Matheus Abreu - Python / Web Developer',
+				content: 'Matheus Abreu - Software Engineer',
 			},
 			{
 				hid: 'og:site_name',
 				property: 'og:site_name',
-				content: 'Matheus Abreu - Python / Web Developer',
+				content: 'Matheus Abreu - Software Engineer',
 			},
 			{
 				hid: 'og:description',
 				property: 'og:description',
 				content:
-					'Matheus Abreu is a Python / Web developer working at olist',
+					'Matheus Abreu is a Software Engineer working at olist',
 			},
 			{
 				hid: 'og:url',
@@ -68,13 +68,13 @@ export default {
 			{
 				hide: 'twitter:title',
 				name: 'twitter:title',
-				content: 'Matheus Abreu - Python / Web Developer',
+				content: 'Matheus Abreu - Software Engineer',
 			},
 			{
 				hid: 'twitter:description',
 				name: 'twitter:description',
 				content:
-					'Matheus Abreu is a Python / Web developer working at olist',
+					'Matheus Abreu is a Software Engineer working at olist',
 			},
 			{
 				hide: 'twitter:card',
