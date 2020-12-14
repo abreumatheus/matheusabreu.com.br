@@ -8,7 +8,7 @@ export default {
 	 ** Nuxt target
 	 ** See https://nuxtjs.org/api/configuration-target
 	 */
-	target: 'static',
+	target: 'server',
 	/*
 	 ** Headers of the page
 	 ** See https://nuxtjs.org/api/configuration-head
@@ -25,7 +25,7 @@ export default {
 				hid: 'description',
 				name: 'description',
 				content:
-					'Matheus Abreu is a Python / Web developer working at HBSIS / AmBev',
+					'Matheus Abreu is a Python / Web developer working at olist',
 			},
 			{
 				hid: 'og:title',
@@ -41,7 +41,7 @@ export default {
 				hid: 'og:description',
 				property: 'og:description',
 				content:
-					'Matheus Abreu is a Python / Web developer working at HBSIS / AmBev',
+					'Matheus Abreu is a Python / Web developer working at olist',
 			},
 			{
 				hid: 'og:url',
@@ -79,7 +79,7 @@ export default {
 				hid: 'twitter:description',
 				name: 'twitter:description',
 				content:
-					'Matheus Abreu is a Python / Web developer working at HBSIS / AmBev',
+					'Matheus Abreu is a Python / Web developer working at olist',
 			},
 			{
 				hide: 'twitter:card',
@@ -152,5 +152,10 @@ export default {
 	 ** Build configuration
 	 ** See https://nuxtjs.org/api/configuration-build/
 	 */
-	build: {},
+	build: [
+		{
+			src: 'nuxt.config.js',
+			use: '@nuxtjs/vercel-builder',
+		},
+	],
 }
