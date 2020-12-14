@@ -7,7 +7,7 @@
 <style>
 @import 'https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap';
 :root {
-	--color-green: #50fa7b;
+	--accent-color: #edad00;
 }
 * {
 	margin: 0;
@@ -16,9 +16,19 @@
 	font-family: 'Roboto', sans-serif;
 }
 body {
-	background: #282a36;
+	background: #0a1f9c;
 	color: white;
 }
+
+.workplace {
+	opacity: 1 !important;
+}
+
+.workplace a {
+	color: white;
+	text-decoration: none;
+}
+
 .links a {
 	color: white;
 	font-size: 18px;
@@ -27,7 +37,7 @@ body {
 	text-decoration: none;
 }
 .links a:hover {
-	color: var(--color-green);
+	color: var(--accent-color);
 	transition: color 700ms;
 }
 .profile-img {
@@ -36,7 +46,7 @@ body {
 	max-width: 300px;
 	max-height: 300px;
 	border-radius: 50%;
-	border: solid var(--color-green);
+	border: solid var(--accent-color);
 	margin-bottom: 32px;
 }
 #wrapper {
@@ -59,16 +69,16 @@ body {
 }
 .social a {
 	margin: 0 10px;
-	border-bottom: solid 1px var(--color-green);
+	border-bottom: solid 1px var(--accent-color);
 	line-height: 42px;
 }
 .toast {
-	background-color: #282a36 !important;
-	border: solid 1px var(--color-green);
+	background-color: #0f1b67 !important;
+	border: solid 1px var(--accent-color);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5) !important;
 }
 .toast a {
-	color: var(--color-green) !important;
+	color: var(--accent-color) !important;
 }
 .vue-typer {
 	font-family: monospace;
@@ -82,10 +92,10 @@ body {
 	width: 10px;
 	height: 28px;
 	position: absolute;
-	background-color: var(--color-green);
+	background-color: var(--accent-color);
 }
 .vue-typer .custom.caret.typing {
-	background-color: var(--color-green);
+	background-color: var(--accent-color);
 }
 @keyframes scale-in-center {
 	0% {

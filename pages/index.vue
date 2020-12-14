@@ -10,13 +10,17 @@
 		</transition>
 		<transition name="fade">
 			<h2 v-show="isRoleTyped || isFinished" itemprop="jobTitle">
-				Python / Web Developer
+				Software Enginner
 			</h2>
 		</transition>
 		<transition name="fade">
-			<p v-show="isCompanyTyped || isFinished" itemprop="worksFor">
-				<b>olist</b>
-			</p>
+			<h2
+				v-show="isCompanyTyped || isFinished"
+				class="workplace"
+				itemprop="worksFor"
+			>
+				<b><a href="https://olist.com/">olist</a></b>
+			</h2>
 		</transition>
 		<transition name="fade">
 			<SocialLinks v-show="isSocialTyped || isFinished"></SocialLinks>
@@ -49,8 +53,8 @@ export default {
 			codeList: [
 				'<ProfilePhoto v-show="isPhotoTyped"></ProfilePhoto>',
 				'<h1 v-show="isNameTyped">Matheus Abreu</h1>',
-				'<h2 v-show="isRoleTyped">Python / Web Developer</h2>',
-				'<p v-show="isCompanyTyped"><b>olist</b></p>',
+				'<h2 v-show="isRoleTyped">Software Enginner</h2>',
+				'<h3 v-show="isCompanyTyped"><b>olist</b></h3>',
 				'<SocialLinks v-show="isSocialTyped"></SocialLinks>',
 			],
 			isPhotoTyped: false,
