@@ -19,7 +19,7 @@
 				class="workplace"
 				itemprop="worksFor"
 			>
-				<b><a href="https://olist.com/">olist</a></b>
+				<b><a href="https://nubank.com.br/">Nubank</a></b>
 			</h2>
 		</transition>
 		<transition name="fade">
@@ -54,7 +54,7 @@ export default {
 				'<ProfilePhoto v-show="isPhotoTyped"></ProfilePhoto>',
 				'<h1 v-show="isNameTyped">Matheus Abreu</h1>',
 				'<h2 v-show="isRoleTyped">Software Enginner</h2>',
-				'<h3 v-show="isCompanyTyped"><b>olist</b></h3>',
+				'<h3 v-show="isCompanyTyped"><b>Nubank</b></h3>',
 				'<SocialLinks v-show="isSocialTyped"></SocialLinks>',
 			],
 			isPhotoTyped: false,

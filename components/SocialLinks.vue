@@ -13,13 +13,13 @@
 			>Github</a
 		>
 		<a
-			href="mailto:matheus.abreu@olist.com"
+			href="mailto:matheus.abreu@nubank.com.br"
 			target="_blank"
 			itemprop="email"
 			>Email</a
 		>
 		<a
-			href="http://www.instagram.com/matheusabreu.jpg"
+			href="http://www.instagram.com/matheusabreu.dv"
 			target="_blank"
 			itemprop="url"
 			>Instagram</a

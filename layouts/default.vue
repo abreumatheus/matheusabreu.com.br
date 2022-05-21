@@ -7,7 +7,7 @@
 <style>
 @import 'https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap';
 :root {
-	--accent-color: #edad00;
+	--accent-color: #ffffff;
 }
 * {
 	margin: 0;
@@ -16,7 +16,7 @@
 	font-family: 'Roboto', sans-serif;
 }
 body {
-	background: #0a1f9c;
+	background: #820ad1;
 	color: white;
 }
 
@@ -73,7 +73,7 @@ body {
 	line-height: 42px;
 }
 .toast {
-	background-color: #0f1b67 !important;
+	background-color: #820ad1 !important;
 	border: solid 1px var(--accent-color);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5) !important;
 }
