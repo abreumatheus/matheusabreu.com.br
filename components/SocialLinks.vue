@@ -1,6 +1,12 @@
 <template>
 	<div class="links social">
 		<a
+			href="https://github.com/abreumatheus/matheusabreu.com.br/raw/master/static/matheus-abreu-cv.pdf"
+			target="_blank"
+			itemprop="url"
+			>CV</a
+		>
+		<a
 			href="http://www.linkedin.com/in/matheuspsabreu"
 			target="_blank"
 			itemprop="url"
